@@ -198,10 +198,17 @@
         <li>Para esto, se debe hacer los cambios necesario, <b>hacer un git add</b> y posterior a esto, ejecutar el comando <b>git commit --amend</b></li>
     </ul>     
     </ul>
-    <h1>Algunos comandos de Git sirven para visualizar cómo se lleva a cabo el trabajo en equipo. Una lista de estos comandos incluye:</h1>
-    <p>git shortlog: Muestra un log por persona de los commits realizados por cada miembro del equipo.</p>
+
+    <h1>Git Shortlog.</h1>
+    <p>Corresponde a unos comandos de Git que sirven para visualizar cómo se lleva a cabo el trabajo en equipo; una lista de estos comandos incluye:</p>
+
+    <ul>
+        <li>git shortlog: Muestra un log por persona de los commits realizados por cada miembro del equipo.</li>
+        <li>git shortlog -sn: Cuenta cuantos commits ha realizado cada persona.</li>
+        <li>git shortlog -sn --all: Cuenta todos los commits incluyendo los borrados.</li>
+        <li>Es conveniente incluir este comando dentro de un alías, así: git config --global alias.stats “shortlog -sn --all --no-merges”</li>
     </ul>
-    </ul>
+    
     <h1>Magia para desarolladores</h1>
     <p>Si has llegado hasta aquí y ya manejas de memoria los principales comandos de git, los comandos para las ramas,sabes hacer un merge sin caer en la locura y trabajar con repositorios remotos.</p>
     <p>Te dejo un buen comando de git que te ayudará a ver fácilmente tu historial de commits.</p>
