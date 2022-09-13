@@ -1,5 +1,5 @@
 /py_code/venv
 /py_code/test*
 /py_code/practice
-/.vscode
+.vscode/*
 /img
