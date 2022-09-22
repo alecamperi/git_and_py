@@ -1,6 +1,6 @@
 # Decorators
 from functools import wraps
-
+import time
 
 def my_logger(orig_func):
     import logging
@@ -16,7 +16,6 @@ def my_logger(orig_func):
 
 
 def my_timer(orig_func):
-    import time
 
     @wraps(orig_func)
     def wrapper(*args, **kwargs):
@@ -27,8 +26,6 @@ def my_timer(orig_func):
         return result
 
     return wrapper
-
-import time
 
 
 @my_logger
